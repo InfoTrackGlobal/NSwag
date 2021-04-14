@@ -3,8 +3,8 @@
   <metadata>
     <id>InfoTrack.NSwag.MSBuild</id>
     <version>13.10.9</version>
-    <authors>Rico Suter</authors>
-    <owners>Rico Suter</owners>
+    <authors>Rico Suter, InfoTrackGlobal</authors>
+    <owners>InfoTrackGlobal</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/InfoTrackGlobal/NSwag</projectUrl>

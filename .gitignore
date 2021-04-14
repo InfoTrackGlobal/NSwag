@@ -13,6 +13,7 @@ src/packages/**
 [Bb]in/
 [Oo]bj/
 *.nugetreferenceswitcher
+/build/tools
 /src/.vs/config
 **/project.lock.json
 /src/NSwag.AspNetCore/Output
