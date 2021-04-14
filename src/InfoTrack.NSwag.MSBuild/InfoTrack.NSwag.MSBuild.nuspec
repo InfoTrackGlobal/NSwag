@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>InfoTrack.NSwag.MSBuild</id>
+    <version>13.10.9</version>
+    <authors>Rico Suter</authors>
+    <owners>Rico Suter</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/InfoTrackGlobal/NSwag</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/RicoSuter/NSwag/master/assets/NuGetIcon.png</iconUrl>
+    <description>NSwag: The OpenAPI/Swagger API toolchain for .NET and TypeScript, customized by InfoTrack.</description>
+    <tags>OpenAPI Swagger AspNetCore Documentation CodeGen TypeScript WebApi AspNet</tags>
+    <copyright>Copyright © Rico Suter, 2020</copyright>
+    <repository type="git" url="https://github.com/InfoTrackGlobal/NSwag.git"/>
+    <developmentDependency>true</developmentDependency>
+    <dependencies />
+    <references />
+  </metadata>
+  <files>
+    <file src="InfoTrack.NSwag.MSBuild.props" target="build" />
+    <file src="InfoTrack.NSwag.MSBuild.props" target="buildCrossTargeting" />
+
+    <file src="..\NSwag.Console\bin\Release\net461\*" target="tools/Win" />
+    <file src="..\NSwag.Console.x86\bin\Release\net461\NSwag.AspNetCore.Launcher.x86.exe" target="tools/Win" />
+    <file src="..\NSwag.Console.x86\bin\Release\net461\NSwag.AspNetCore.Launcher.x86.exe.config" target="tools/Win" />
+    <file src="..\NSwag.Console.x86\bin\Release\net461\NSwag.x86.exe" target="tools/Win" />
+    <file src="..\NSwag.Console.x86\bin\Release\net461\NSwag.x86.exe.config" target="tools/Win" />
+
+    <file src="..\NSwag.ConsoleCore\bin\release\netcoreapp3.1\Publish\**" target="tools/NetCore31" />
+    <file src="..\NSwag.ConsoleCore\bin\release\net5.0\Publish\**" target="tools/Net50" />
+  </files>
+</package>

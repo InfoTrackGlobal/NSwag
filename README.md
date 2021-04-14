@@ -1,3 +1,7 @@
+## InfoTrack Fork of NSwag
+This fork was created so we could redistribute a customized `NSwag.MSBuild` package.
+Currently that's all that's setup to work.
+
 ## NSwag: The Swagger/OpenAPI toolchain for .NET, ASP.NET Core and TypeScript
 
 [![NuGet Version](https://img.shields.io/nuget/v/NSwag.Core.svg)](https://www.nuget.org/packages?q=NSwag)

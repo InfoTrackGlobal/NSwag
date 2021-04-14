@@ -168,7 +168,7 @@ namespace {{ Namespace }}
 {%              else -%}
         public {{ exceptionClassName }}(string message, int statusCode, string response, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> headers, System.Exception innerException)
 {%              endif -%}
-            : base(message + "\n\nStatus: " + statusCode + "\nResponse: \n" + ((response == null) ? "(null)" : response.Substring(0, response.Length >= 512 ? 512 : response.Length)), innerException)
+            : base(message + "\n\nStatus: " + statusCode + "\nResponse: " + ((response == null) ? "(null)" : response.Substring(0, response.Length >= 512 ? 512 : response.Length)), innerException)
         {
             StatusCode = statusCode;
             Response = response; 
